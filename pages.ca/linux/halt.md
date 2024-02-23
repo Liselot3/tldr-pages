@@ -1,7 +1,7 @@
 # halt
 
 > Deté, apaga o reinicia la màquina.
-> Més informació: <https://www.man7.org/linux/man-pages/man8/halt.8.html>.
+> Més informació: <https://manned.org/halt.8>.
 
 - Deté la màquina:
 
@@ -17,7 +17,7 @@
 
 - Deté la màquina inmediatament sense contactar l'administrador de sistemes:
 
-`halt --force --force`
+`halt --force`
 
 - Escriu l'entrada de wtpm shutdown sense aturar el sistema:
 

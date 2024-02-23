@@ -15,10 +15,6 @@
 
 `dig +short {{example.com}} {{A|MX|TXT|CNAME|NS}}`
 
-- Get all types of records for a given domain name:
-
-`dig {{example.com}} ANY`
-
 - Specify an alternate DNS server to query:
 
 `dig @{{8.8.8.8}} {{example.com}}`
@@ -34,3 +30,7 @@
 - Perform iterative queries and display the entire trace path to resolve a domain name:
 
 `dig +trace {{example.com}}`
+
+- Query a DNS server over a non-standard [p]ort using the TCP protocol:
+
+`dig +tcp -p {{port}} @{{dns_server_ip}} {{example.com}}`

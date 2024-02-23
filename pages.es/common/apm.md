@@ -1,10 +1,10 @@
 # apm
 
 > Editor Atom Package Manager.
-> Ver `atom`.
+> Vea `atom`.
 > Más información: <https://github.com/atom/apm>.
 
-- Instala un paquete de http://atom.io/packages o un tema de http://atom.io/themes:
+- Instala un paquete de <http://atom.io/packages> o un tema de <http://atom.io/themes>:
 
 `apm install {{nombre_de_paquete}}`
 
