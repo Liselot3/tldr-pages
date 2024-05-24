@@ -1,10 +1,10 @@
 # convert
 
-> Image conversion tool.
+> Convert between image formats, scale, join, and create images, and much more.
 > Part of ImageMagick.
 > More information: <https://imagemagick.org/script/convert.php>.
 
-- Convert an image from JPG to PNG:
+- Convert an image from JPEG to PNG:
 
 `convert {{path/to/input_image.jpg}} {{path/to/output_image.png}}`
 
@@ -16,13 +16,13 @@
 
 `convert {{path/to/input_image.png}} -resize 640x480 {{path/to/output_image.png}}`
 
-- Horizontally append images:
+- Scale an image to have a specified file size:
 
-`convert {{path/to/image1.png path/to/image2.png ...}} +append {{path/to/output_image.png}}`
+`convert {{path/to/input_image.png}} -define jpeg:extent=512kb {{path/to/output_image.jpg}}`
 
-- Vertically append images:
+- Vertically/Horizontally append images:
 
-`convert {{path/to/image1.png path/to/image2.png ...}} -append {{path/to/output_image.png}}`
+`convert {{path/to/image1.png path/to/image2.png ...}} {{-append|+append}} {{path/to/output_image.png}}`
 
 - Create a GIF from a series of images with 100ms delay between them:
 
