@@ -1,7 +1,7 @@
 # docker ps
 
 > List Docker containers.
-> More information: <https://docs.docker.com/engine/reference/commandline/ps/>.
+> More information: <https://docs.docker.com/reference/cli/docker/container/ls/>.
 
 - List currently running Docker containers:
 
@@ -25,7 +25,7 @@
 
 - Filter containers by exit status code:
 
-`docker ps --all --filter="exited={{code}}"`
+`docker ps --all --filter "exited={{code}}"`
 
 - Filter containers by status (created, running, removing, paused, exited and dead):
 

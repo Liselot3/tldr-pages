@@ -255,7 +255,7 @@ Display the current license's e[xp]i[r]ation date and time:
 
 - **所有描述必须以祈使句表达。**
 
-如果你担心命令在不同平台或操作系统之间可能不同（例如 Windows 对比 macOS），大多数 [tldr 页面客户端](https://github.com/tldr-pages/tldr/wiki/tldr-pages-clients) 将选择最适合的命令版本。
+如果你担心命令在不同平台或操作系统之间可能不同（例如 Windows 对比 macOS），大多数 [tldr 页面客户端](https://github.com/tldr-pages/tldr/wiki/Clients) 将选择最适合的命令版本。
 
 在这种情况下，默认将显示 Windows 版本的 `cd` 信息（存储在 `pages/windows/cd.md` 中）给 Windows 用户，并为 Linux、macOS 和其他平台显示一个通用版本（存储在 `pages/common/cd.md` 中）。
 
@@ -345,9 +345,9 @@ Display the current license's e[xp]i[r]ation date and time:
 
 以下规则适用于中文（zh）和繁体中文（zh_TW）：
 
-1. 在西文单词和数字前后放置一个空格。
-   例如：`列出所有 docker 容器` 而不是 `列出所有 docker 容器`。
-   例如：`宽度为 50 个字` 而不是 `宽度为 50 个字`。
+1. 在西文单词和数字**前后**放置一个空格。
+   例如：`列出所有 docker 容器` 而不是 `列出所有docker容器`。
+   例如：`宽度为 50 个字` 而不是 `宽度为50个字`。
 2. 除了度数和百分比，在数字和单位之间留一个空格。
    例如：`容量 50 MB` 而不是 `容量 50MB`。
    对于度数和百分比：使用 `50°C` 和 `50%` 而不是 `50 °C` 和 `50 %`.

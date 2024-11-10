@@ -6,7 +6,7 @@
 
 - Play a video or audio from a URL or file:
 
-`mpv {{url|path/to/file}}'`
+`mpv {{url|path/to/file}}`
 
 - Jump backward/forward 5 seconds:
 
@@ -34,4 +34,4 @@
 
 - Display the output of webcam or other video input device:
 
-`mpv /dev/{{video0}}`
+`mpv {{/dev/video0}}`

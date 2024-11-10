@@ -1,7 +1,8 @@
 # netstat
 
 > Display network-related information such as open connections, open socket ports, etc.
-> More information: <https://man7.org/linux/man-pages/man8/netstat.8.html>.
+> See also: `ss`.
+> More information: <https://manned.org/netstat>.
 
 - List all ports:
 

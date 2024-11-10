@@ -5,26 +5,26 @@
 > Nota: la tasa de baudios es la velocidad de transferencia de datos entre una terminal y un dispositivo a través de una conexión serie.
 > Más información: <https://manned.org/agetty>.
 
-- Conecta `stdin` a un puerto (relativo a `/dev`) y especifica opcionalmente una tasa de baudios (por predeterminado 9600):
+- Conecta `stdin` a un puerto (relativo a `/dev`) y especifica opcionalmente una tasa de baudios (cuyo valor predeterminado es 9600):
 
 `agetty {{tty}} {{115200}}`
 
-- Asume que `stdin` ya está conectado a una `tty` y establece un [t]iempo de espera para el inicio de sesión:
+- Asume que `stdin` ya está conectado a una `tty` y establece un tiempo de espera para el inicio de sesión:
 
 `agetty {{-t|--timeout}} {{tiempo_de_espera_en_segundos}} -`
 
-- Asume que `tty` es de [8]-bits, anulando la variable de entorno `TERM` establecida por `init`:
+- Asume que `tty` es de [8]-bits, sobreescribiendo la variable de entorno `TERM` establecida por `init`:
 
-`agetty -8 - {{term_var}}`
+`agetty -8 - {{variable_term}}`
 
-- Omite el inicio de sesión ([n]o inicio de sesión) e invoca, como superusuario, otro programa de inicio de sesión en lugar de `/bin/login`:
+- Omite el inicio de sesión e invoca, como superusuario, otro programa de inicio de sesión en lugar de `/bin/login`:
 
-`agetty {{-n|--skip-login}} {{-l|--login-program}} {{login_program}} {{tty}}`
+`agetty {{-n|--skip-login}} {{-l|--login-program}} {{programa_de_inicio_de_sesión}} {{tty}}`
 
-- No muestra el archivo de pre-inicio de sesión ([i]ssue) (`/etc/issue` por predeterminado) antes de escribir el mensaje de inicio de sesión:
+- Escribe el mensaje de inicio de sesión sin mostrar el contenido del archivo de pre-inicio de sesión (`/etc/issue` por predeterminado):
 
 `agetty {{-i|--noissue}} -`
 
-- Cambia el directorio [r]aíz y escribe un falso [H]ost específico en el archivo `utmp`:
+- Cambia el directorio raíz y escribe un host falso en el archivo `utmp`:
 
-`agetty {{-r|--chroot}} {{/ruta/a/raíz_directorio}} {{-H|--host}} {{fake_host}} -`
+`agetty {{-r|--chroot}} {{/ruta/a/raíz_directorio}} {{-H|--host}} {{host_falso}} -`

@@ -42,7 +42,7 @@ Option             | Required?   | Meaning
 
 Clients MUST implement both the short and long versions of an option.
 
-Additional decoration MAY be printed if the standard output is a [TTY](http://www.linusakesson.net/programming/tty/index.php). If not, then the output MUST not contain any additional decorations. For example, a page list MUST be formatted with one page name per line (to enable easy manipulation using standard CLI tools such as `grep` etc.).
+Additional decoration MAY be printed if the standard output is a [TTY](https://linusakesson.net/programming/tty/index.php). If not, then the output MUST not contain any additional decorations. For example, a page list MUST be formatted with one page name per line (to enable easy manipulation using standard CLI tools such as `grep` etc.).
 
 Clients MAY support additional custom arguments and syntax not documented here.
 
@@ -163,7 +163,7 @@ If a page cannot be found in _any_ platform, then it is RECOMMENDED that clients
 https://github.com/tldr-pages/tldr/issues/new?title=page%20request:%20{command_name}
 ```
 
-where `{command_name}` is the name of the command that was not found. Clients that have control over their exit code on the command line (i.e. clients that provide a CLI) MUST exit with a non-zero exit code in addition to showing the above message.
+where `{command_name}` is the name of the command that was not found. Clients that have control over their exit code on the command-line (i.e. clients that provide a CLI) MUST exit with a non-zero exit code in addition to showing the above message.
 
 #### If multiple versions of a page were found
 
